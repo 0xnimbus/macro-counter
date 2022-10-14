@@ -2,7 +2,7 @@
 ## A great way to keep track of your calories
 
 ### Screenshots 
-()[https://imgur.com/a/ffljGkx]
+[](https://imgur.com/a/ffljGkx)
 
 ### Technologies Used 
 - MongoDB
@@ -22,7 +22,7 @@
 - Serve-favicon 
 
 ### Trello 
-(Click here to see Trello)[https://trello.com/invite/b/9YjCG2MM/df9aa93a2c2d3c53bf7a37bc5c6734c8/project-4-macro-tracker]
+[Click here to see Trello](https://trello.com/invite/b/9YjCG2MM/df9aa93a2c2d3c53bf7a37bc5c6734c8/project-4-macro-tracker)
 
 ### Planned Future Enhancements
 Immediate fixes 
