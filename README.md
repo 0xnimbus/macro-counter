@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Meal Mate
+## A great way to keep track of your calories
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Screenshots 
+()[https://imgur.com/a/ffljGkx]
 
-## Available Scripts
+### Technologies Used 
+- MongoDB
+- Mongoose 
+- Express
+- React
+- Javascript 
+- CSS 
+- Node JS
+- DotEnv 
+- Bcrypt 
+- JsonWebtoken
+- Mongoose Delete 
+- Serve Favicon
+- React router Dom 
+- Morgan 
+- Serve-favicon 
 
-In the project directory, you can run:
+### Trello 
+(Click here to see Trello)[https://trello.com/invite/b/9YjCG2MM/df9aa93a2c2d3c53bf7a37bc5c6734c8/project-4-macro-tracker]
 
-### `npm start`
+### Planned Future Enhancements
+Immediate fixes 
+- First and forement I will be fixing auth so that users can login to use the app
+- I will be implementing a sum of all calories consumed so users know their daily total 
+- Savings meals by date will be implemented 
+- Will fix the update function to run properly 
+- The UI can definitely be improved a lot 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Near future updates
+- Macros will be able to be assigned to foods 
+- A tally of daily macros consumed will be available
+- You will be able to view previous days
+- Users will be able to set their daily calorie and macro goals and see how close they are to hitting them 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Icebox features
+- I would like to connect this to the MyFitnessPal API and have access to their database of foods 
+- The ability to track you weight and log you fitness journey is something I am considering 
+- Graphs to help users visualize their calorie and macro intake 
+- Graphs to help users visualise their wieght loss pattern and potentially extrapulate 
+- A BMI calculator where users can see what their BMI is 
