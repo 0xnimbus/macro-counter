@@ -108,3 +108,31 @@ html{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bold;
 }
+
+h3{
+  display: flex;
+  justify-content: center;
+  background-color: #FF6961 ;
+  margin: 20px;
+  padding: 0 200px;
+  display: inline;
+  border-radius: 15px;
+}
+
+h3:hover{
+  cursor: pointer;
+  background-color: white;
+}
+
+.signup-div{
+  display: flex;
+  justify-content: center;
+  margin: 0 -50px ;
+}
+
+.auth-input{
+  background-color: #BDF2FF;
+  border-color: white;
+  border-radius: 15px;
+  margin: 5px 5px;
+}

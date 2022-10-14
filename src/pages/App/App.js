@@ -1,16 +1,25 @@
 import { Component } from 'react';
 import './App.css';
+//Add the Route named import 
+
+import {Route, Switch, Redirect} from 'react-router-dom'
 
 import Form from '../../components/Form/Form';
 import Food from '../../components/Food/Food';
+import AuthPage from '../../components/Auth/AuthPage'
 
 export default class App extends Component {
   state = {
+    user: null, 
     foods: [],
     newFood: '',
     newCals: 0, 
     //Will come back and make cal counter work
     totalCals: 0,
+  }
+
+  setUserInState = (incomingUserData) => {
+    this.setState({ user: incomingUserData})
   }
 
   //Will come back and make cal counter work
@@ -91,6 +100,8 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
+        { this.state.user ? 
+      <Route>
         <div className='title-div'>
           <h1 className='title'>Meal Tracker</h1> 
         </div>
@@ -115,6 +126,7 @@ export default class App extends Component {
               delFood={this.delFood}
             />
           )
+          
             :
           <h1>No Foods</h1>
         } 
@@ -137,12 +149,17 @@ export default class App extends Component {
           this.state.foods.map(f => 
             <button className='del-button' onClick={() => this.updateFood(f._id, f.foods, f.calories)}> ⏪ </button>          
           )
+          
             :
           console.log('filler')
         } 
             </th> 
           </tr>
         </table>
+        </Route>
+        :
+        <AuthPage setUserInState={this.setUserInState}/>
+        }
       </div>
     );
   }
