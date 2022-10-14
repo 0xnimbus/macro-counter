@@ -34,6 +34,20 @@ export default class App extends Component {
     .then(this.calSum())
   }
 
+  componentDidMount() {
+    let token = localStorage.getItem('token')
+    if (token) {
+      const payload = JSON.parse(atob(token.split('.')[1])); 
+      if (payload.exp < Date.now() / 1000) {  
+        localStorage.removeItem('token');
+        token = null;
+      } else { 
+        let userDoc = payload.user 
+        this.setState({user: userDoc})      
+      }
+    }
+  }
+
   newName = async (name, cals) => {
     var tempName 
     var tempNum

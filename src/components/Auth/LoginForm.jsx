@@ -50,7 +50,7 @@ export default class SignUpForm extends Component {
             <label>Password</label>
             <input type="password" name="password" className='auth-input' value={this.state.password} onChange={this.handleChange} required />
             <br></br>
-            <button type="submit">LOG IN</button>
+            <button className='login-btn' type="submit">LOG IN</button>
           </form>
         </div>
         <p className="error-message">&nbsp;{this.state.error}</p>

@@ -136,3 +136,14 @@ h3:hover{
   border-radius: 15px;
   margin: 5px 5px;
 }
+
+.login-btn{
+  background-color: #FF6961 ;
+  border-radius: 15px;
+  border-color: white;
+}
+
+.login-btn:hover{
+  background-color: white;
+  cursor: pointer;
+}
