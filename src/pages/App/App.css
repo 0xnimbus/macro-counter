@@ -44,5 +44,67 @@ table{
 .del-button{
   display: flex;
   flex-direction: column;
-  margin: 94px 40px 0 40px;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.form-div{
+  display: flex;
+  justify-content: center;
+}
+
+.post{
+  background-color: #FF6961;
+  padding: 0px 50px;
+  border-radius: 15px;
+}
+
+.del-button{
+  background-color: #BDF2FF;
+  border-radius: 15px;
+  border-width: 3px;
+  border-color: white;
+  padding: 2px;
+
+}
+
+.del-button:hover{
+  cursor: pointer;
+  background-color: white;
+}
+
+html{
+  background-color: #FDFD96;
+}
+
+.input-text{
+  background-color: #BDF2FF ;
+  border-radius: 15px;
+  text-align: center;
+  border-color: white;
+  border-width: 3px;
+  resize: none;
+  margin: 10px;
+  padding: 5px;
+}
+
+.submit-button{
+  border-radius: 15px;
+  border-color: white;
+  background-color: #BDF2FF;
+  padding: 5px;
+  border-width: 3px;
+}
+
+.submit-button:hover{
+  cursor: pointer;
+  background-color: white;
+}
+
+.title{
+  background-color: #FF6961;
+  margin: 0px 0 0 0;
+  padding: 20px 0 20px 0; 
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
 }

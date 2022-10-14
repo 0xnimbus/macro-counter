@@ -9,10 +9,20 @@ export default class App extends Component {
     foods: [],
     newFood: '',
     newCals: 0, 
+    //Will come back and make cal counter work
+    totalCals: 0,
+  }
+
+  //Will come back and make cal counter work
+  calSum = async () => { 
+    await this.state.foods.map(f => 
+     this.setState({totalCals: f + this.state.totalCals})
+      )
   }
 
   getFoods = async () => {
     await fetch("/api").then(res => res.json()).then(foods => this.setState({ foods }))
+    .then(this.calSum())
   }
 
   newName = async (name, cals) => {
@@ -56,6 +66,14 @@ export default class App extends Component {
       })
   }
 
+
+  totalCals = async (f) => {
+    let num
+    num = this.state.totalCals + f
+    this.setState({totalCals: num})
+  }
+
+
   updateFood = async (id, name, cals) => {
     // Could not get update function to work so I made a janky version 
     //Build req body
@@ -73,9 +91,18 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className='title-div'>
+          <h1 className='title'>Meal Tracker</h1> 
+        </div>
+        <div className='form-div'>
         <Form
           getFoods={this.getFoods}
         />
+        </div>
+        {/* Will come back and make cal counter work */}
+        {/* <div className='totalCals-div'> 
+          {this.state.totalCals}
+        </div> */}
         <table>
           <tr> 
             <th>
@@ -87,7 +114,6 @@ export default class App extends Component {
               getFoods={this.getFoods}
               delFood={this.delFood}
             />
-            
           )
             :
           <h1>No Foods</h1>
@@ -97,7 +123,7 @@ export default class App extends Component {
         {this.state.foods.length ? 
           
           this.state.foods.map(f => 
-            <button className='del-button' onClick={() => this.delFood(f._id)}> Delete: {f.foods} </button>          
+            <button className='del-button' onClick={() => this.delFood(f._id)}> ❌ </button>          
           )
             :
           console.log('filler')
@@ -109,7 +135,7 @@ export default class App extends Component {
             {this.state.foods.length ? 
           
           this.state.foods.map(f => 
-            <button className='del-button' onClick={() => this.updateFood(f._id, f.foods, f.calories)}> Update: {f.foods} </button>          
+            <button className='del-button' onClick={() => this.updateFood(f._id, f.foods, f.calories)}> ⏪ </button>          
           )
             :
           console.log('filler')

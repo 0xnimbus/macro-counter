@@ -36,19 +36,23 @@ handleSubmit = async () => {
   render() {
     return(
       <div>
-        <h3> Insert Food Name</h3> 
+        <div className='form-div'>
         <textarea 
+          placeholder='Insert Food Name'
           name="foods"
+          className='input-text'
           onChange={this.handleChange}
           value={this.state.foods}></textarea>
         <br/> 
-        <h3>Insert Calorie Amount</h3>
         <textarea 
+          placeholder='Insert Calorie Amount'
           name="calories"
+          className='input-text'
           onChange={this.handleChange}
           value={this.state.calories}></textarea>
         <br/>
-        <button onClick={this.handleSubmit}>Submit!</button>
+        </div>
+        <button className='submit-button' onClick={this.handleSubmit}>Submit!</button>
       </div>
     )
   }
