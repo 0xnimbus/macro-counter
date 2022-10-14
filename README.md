@@ -2,7 +2,7 @@
 ## A great way to keep track of your calories
 
 ### Screenshots 
-[Imgur](https://i.imgur.com/Bolcncp.png)
+![Imgur](https://i.imgur.com/Bolcncp.png)
 
 ### Technologies Used 
 - MongoDB
